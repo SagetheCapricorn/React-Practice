@@ -30,8 +30,10 @@ jobs:
       - image: cimg/node:17.4.0
     steps:
       - checkout
-      - run: node --version
-      - run: echo Hello, World!
+      - run: 
+        command: node --version
+        command: npm install --global expo-cli
+        command: expo --version
 
 
 
