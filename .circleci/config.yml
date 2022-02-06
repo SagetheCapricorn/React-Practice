@@ -25,7 +25,7 @@ jobs:
   #         name: "Say hello"
   #         command: "echo Hello, World!"
 
-  build:
+  node:
     docker:
       - image: cimg/node:17.4.0
     steps:
@@ -35,6 +35,6 @@ jobs:
 # Invoke jobs via workflows
 # See: https://circleci.com/docs/2.0/configuration-reference/#workflows
 workflows:
-  say-hello-workflow:
+  set-up-workflow:
     jobs:
-      - say-hello
+      -node
