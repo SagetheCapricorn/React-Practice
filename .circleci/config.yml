@@ -24,8 +24,7 @@ jobs:
       - run:
           name: "Say hello"
           command: "echo Hello, World!"
-
-jobs:
+          
   build:
     docker:
       - image: cimg/node:17.4.0
