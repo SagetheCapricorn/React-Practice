@@ -31,9 +31,10 @@ jobs:
     steps:
       - checkout
       - run: 
-        command: node --version
-        command: npm install --global expo-cli
-        command: expo --version
+        command: 
+          node --version
+          npm install --global expo-cli
+          expo --version
 
 
 
