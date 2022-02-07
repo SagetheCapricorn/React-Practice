@@ -10,7 +10,6 @@ defaults: &defaults
       description: "Install our dependencies currently installing npm"
       steps:
         - run: 
-            name: Install npm
             command: npm ci
             command: cd
     publish_to_expo:
@@ -18,7 +17,6 @@ defaults: &defaults
       steps:
         - checkout
         - run:
-          name: Publish to Expo
           command:  npx echo  
           
 
