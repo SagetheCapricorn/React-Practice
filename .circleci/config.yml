@@ -9,15 +9,15 @@ defaults: &defaults
     install_dependencies: 
       description: "Install our dependencies currently installing npm"
       steps:
-        - run: 
-            command: npm ci
-            command: cd
+        - run:  npm ci
+          
     publish_to_expo:
       description: "Bundle and send JS to Expo"
       steps:
         - checkout
-        - run:
-          command:  npx echo  
+        - run: expo publish 
+
+work
           
 
 
