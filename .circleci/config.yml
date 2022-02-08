@@ -26,9 +26,8 @@ jobs:
       - checkout
       - run: ls
       - run: pwd
-      - run:
-          cd ..
-          dir
+      - run: cd ..
+      - run: pwd
 
 
 # Orchestrate our job run sequence
