@@ -24,8 +24,8 @@ jobs:
       - image: cimg/node:17.4.0 
     steps:
       - checkout
-      - run: npm ci
       - run: ls
+      
 
 # Orchestrate our job run sequence
 workflows:
