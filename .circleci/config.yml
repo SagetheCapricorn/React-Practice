@@ -20,8 +20,8 @@ jobs:
       - run: node --version
 
   test:
-    # docker:
-    #   - image: cimg/node
+    docker:
+      - image: cimg/node:17.4.0
     steps:
       - checkout
       - run: node --version
