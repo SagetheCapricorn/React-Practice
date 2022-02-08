@@ -25,7 +25,7 @@ jobs:
     steps:
       - checkout
       - run: ls
-      - run: cd
+      - run: cd CampusDate
 
 
 # Orchestrate our job run sequence
