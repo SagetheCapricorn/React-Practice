@@ -19,20 +19,18 @@ jobs:
       - checkout
       - run: node --version
 
-  test:
-    docker:
-      - image: cimg/node:17.4.0
+  install:
+    context:
+      - build
     steps:
       - checkout
-      - run: node --version
-      - run: ls
-      - run: echo "this is the test job"
+      - run: npm ci
 
 # Orchestrate our job run sequence
 workflows:
-  build_and_test:
+  build_and_install:
     jobs:
       - build
-      - test
+      - install
 
       
