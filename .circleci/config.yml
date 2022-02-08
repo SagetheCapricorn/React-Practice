@@ -25,7 +25,8 @@ jobs:
     steps:
       - checkout
       - run: ls
-      
+      - run: cd
+
 
 # Orchestrate our job run sequence
 workflows:
