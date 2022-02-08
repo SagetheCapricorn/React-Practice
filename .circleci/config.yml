@@ -19,18 +19,20 @@ jobs:
       - checkout
       - run: node --version
 
-  # test:
-  #   # docker:
-  #   #   - image: cimg/node
-  #   steps:
-  #     - checkout
-  #     - run: node --version
-  #     - run: ls
-  #     - run: echo "this is the test job"
+  test:
+    # docker:
+    #   - image: cimg/node
+    steps:
+      - checkout
+      - run: node --version
+      - run: ls
+      - run: echo "this is the test job"
 
 # Orchestrate our job run sequence
 workflows:
   build_and_test:
     jobs:
       - build
+      - test
+
       
