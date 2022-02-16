@@ -24,7 +24,7 @@ jobs:
       - image: cimg/node:17.4.0 
     steps:
       - checkout
-      - run: expo
+      - run: expo --version
       - run: npm install -g expo-cli
       - run: expo --version
 
